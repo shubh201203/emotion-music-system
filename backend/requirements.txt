@@ -6,4 +6,4 @@ scikit-fuzzy
 spotipy
 python-dotenv
 pydantic
-tensorflow-cpu
+tensorflow==2.12.0
