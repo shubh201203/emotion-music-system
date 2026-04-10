@@ -283,6 +283,11 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Authenticity Footer */}
+      <div style={{ textAlign: 'center', marginTop: '3rem', paddingBottom: '1rem', color: '#64748b', fontSize: '0.85rem', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+        Engineered by <span style={{ color: '#8b5cf6', fontWeight: 'bold', textShadow: '0 0 10px rgba(139, 92, 246, 0.4)' }}>Shubh • Harshit • Aritra</span>
+      </div>
     </div>
   );
 }
