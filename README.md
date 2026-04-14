@@ -1,8 +1,8 @@
 # 🎧 Emotion-Driven Beats (AI Top 1% Project)
 
 ## 🌐 Live Demo
-- **Frontend**: [https://your-app.vercel.app](https://your-app.vercel.app)
-- **Backend API**: [https://your-backend.onrender.com](https://your-backend.onrender.com)
+- **Frontend**: [https://emotion-music-system.vercel.app](https://emotion-music-system.vercel.app)
+- **Backend API**: [https://emotion-music-system-unge.onrender.com](https://emotion-music-system-unge.onrender.com)
 
 ## 🧠 What is this?
 An industry-grade, full-stack application that utilizes **Real-Time Facial Emotion Recognition** mapped dynamically through a **Fuzzy Logic Math Engine** to seamlessly request curated, personalized audio playback from the **Spotify Web API**. It learns over time via an AI feedback loop!

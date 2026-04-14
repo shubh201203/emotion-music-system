@@ -16,10 +16,9 @@ app = FastAPI(title="Emotion to Music Recommender API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",       # Vite dev server
-        "http://localhost:3000",       # Alternate dev port
-        "https://*.vercel.app",        # All Vercel preview deploys
-        "*",                           # Fallback — tighten after deployment
+        "http://localhost:5173",                    # Vite dev server
+        "http://localhost:3000",                    # Alternate dev port
+        "https://emotion-music-system.vercel.app",  # Production frontend
     ],
     allow_credentials=True,
     allow_methods=["*"],
