@@ -12,13 +12,23 @@ from database import db_client
 
 app = FastAPI(title="Emotion to Music Recommender API")
 
+# CORS: Allow both local dev and deployed Vercel frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust in production
+    allow_origins=[
+        "http://localhost:5173",       # Vite dev server
+        "http://localhost:3000",       # Alternate dev port
+        "https://*.vercel.app",        # All Vercel preview deploys
+        "*",                           # Fallback — tighten after deployment
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok", "mode": "deployed"}
 
 class AnalyzeRequest(BaseModel):
     image_base64: str

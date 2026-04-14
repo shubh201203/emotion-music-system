@@ -4,9 +4,11 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, Music, PlayCircle, Loader2, ThumbsUp, ThumbsDown, CheckCircle, RefreshCw } from 'lucide-react';
 
-// Make sure to match backend URL
-const API_URL = "http://localhost:8000/analyze";
-const FEEDBACK_URL = "http://localhost:8000/feedback";
+// Reads from env at build time. Set VITE_API_URL in Vercel dashboard.
+// Falls back to localhost for local development.
+const BACKEND = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = `${BACKEND}/analyze`;
+const FEEDBACK_URL = `${BACKEND}/feedback`;
 
 export default function App() {
   const webcamRef = useRef(null);
