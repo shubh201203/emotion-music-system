@@ -448,11 +448,9 @@ graph LR
 
 ---
 
-## 👥 17. Contributors & Acknowledgments
+## 👤 17. Author & Maintainer
 
-* **Shubh Sharma** — *Architecture, Backend API, Spotify Integration & System Deployment* ([GitHub](https://github.com/shubh201203) · [LinkedIn](https://www.linkedin.com/in/shubh-sharma-2067981b5))
-* **Harshit** — *Frontend UI/UX Design, Framer Motion Animations & Client Engineering*
-* **Aritra** — *Fuzzy Logic Audio Mapping Formulation & Testing*
+* **Shubh Sharma** — *Full-Stack Engineering, Affective Audio Architecture, Computer Vision & Deployment* ([GitHub](https://github.com/shubh201203) · [LinkedIn](https://www.linkedin.com/in/shubh-sharma-2067981b5) · [Portfolio](https://shubh201203.github.io/portfolio/))
 
 ---
 
